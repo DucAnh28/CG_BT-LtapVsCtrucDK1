@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính cước điện thoại</title>
+</head>
+<body>
+<label>Nhập số tiền điện thoại<input id="sotien" name="tiendt"></label>
+<button id="tinhcuoc" onclick="tinhcuoc()">Bấm cực mạnh</button>
+</body>
+<script>
+    function tinhcuoc(){
+        let a = document.getElementById("sotien").value;
+        c = a*2400;
+        if (c>50000){
+            document.write("Bạn dùng quá nhiều tiền điện thoại")
+        } else {
+            document.write("Bạn dùng tiền điện thoại ")
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<label>Bài kiểm tra<input id="baikiemtra" type="number"></label>
+<label>Bài giữa kỳ<input id="giuaky" type="number"></label>
+<label>Bài cuối kỳ<input id="cuoiky" type="number"></label>
+<button onclick="tinhtoan()">Bấm cực mạnh</button>
+<script>
+    function tinhtoan() {
+        var a = document.getElementById("baikiemtra").value;
+        var b = document.getElementById("giuaky").value;
+        var c = document.getElementById("cuoiky").value;
+        diemtb = ((a + b * 2 + c * 3) / 6);
+        if (diemtb > 0) {
+            if (diemtb > 9) {
+                alert("Học sinh đạt học sinh xuất sắc")
+            } else if (diemtb > 7.5) {
+                alert("Học sinh đạt học sinh giỏi")
+            } else if (diemtb > 5) {
+                alert("Học sinh đạt học sinh khá")
+            } else
+                alert("Học sinh đạt học sinh TB")
+        }
+    }
+</script>
+</body>
+</html>
